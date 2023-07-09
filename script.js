@@ -54,6 +54,7 @@ document.querySelector(".again").addEventListener("click", function () {
   const again = console.log(typeof document.querySelector(".again"));
   console.log(again);
   if (!again) {
+    score = 20;
     document.querySelector(".score").textContent = "20";
     document.querySelector("body").style.background = "#222";
     document.querySelector(".number").style.width = "15rem";
