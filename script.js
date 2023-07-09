@@ -12,7 +12,7 @@
 
 // we gonna listen the even on click button
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
 
@@ -60,5 +60,6 @@ document.querySelector(".again").addEventListener("click", function () {
     document.querySelector(".message").textContent = " Start guessing...";
     document.querySelector(".number").textContent = "?";
     document.querySelector(".guess").value = null;
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
   }
 });
